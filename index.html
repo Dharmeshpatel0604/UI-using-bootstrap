@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <title>UI Website</title>
+    <style>
+        .sliderimg {
+            max-height: 300px;
+            max-width: 100%;
+        }
+
+        .offerimg {
+            max-height: 400px;
+            max-width: 100%;
+        }
+
+        .nav1 {
+            background-color: orange;
+                      
+        }
+
+        .cardimg {
+            height: 300px;
+            width: 100%;
+        }
+
+        .cardmargin {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+
+        <div>
+            <!-- Navbar Start  -->
+            <nav class="navbar navbar-expand-lg navbar-light nav1">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Food Variety</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="navbar navbar-light nav1">
+                    <div class="container-fluid">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </nav>
+            <!-- Navbar End  -->
+        </div>
+
+
+        <div class="container">
+            <!--Sloider Start-->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Images/ash-376464.jpg" class="d-block w-100 sliderimg" alt="ash-376464">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.pexels.com/photos/406152/pexels-photo-406152.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="d-block w-100 sliderimg" alt="cats-coming-406152">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="d-block w-100 sliderimg" alt="chan-walrus-958545">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="d-block w-100 sliderimg" alt="ash-376464">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Fourth slide label</h5>
+                            <p>Some representative placeholder content for the Forth slide.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="https://images.pexels.com/photos/3186654/pexels-photo-3186654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="d-block w-100 sliderimg" alt="ash-376464">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>fifth slide label</h5>
+                            <p>Some representative placeholder content for the fifth slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <!--Sloider End-->
+            </div>
+        </div>
+        <div class="container">
+            <!-- Food Image card with Pricing Start -->
+            <div class="row">
+                <div class="card cardmargin" style="width:12rem;">
+                    <img src="./Images/Burger.jpg" height="300px" class="card-img-top cardimg" alt="Burger">
+                    <div class="card-body">
+                        <p class="card-text">Burger: Rs:150\- (1 nos).</p>
+                    </div>
+                </div>
+                <div class="card cardmargin" style="width: 12rem;">
+                    <img src="./Images/Ice creame.jpg" height="300px" class="card-img-top" alt="Ice Cream">
+                    <div class="card-body">
+                        <p class="card-text">Ice-cream: Rs:120\- (1 nos).</p>
+                    </div>
+                </div>
+                <div class="card cardmargin" style="width: 12rem;">
+                    <img src="./Images/Noodles.jpg" class="card-img-top cardimg" alt="Noodles">
+                    <div class="card-body">
+                        <p class="card-text">Noodles: Rs:350\- (1 Plate).</p>
+                    </div>
+                </div>
+
+                <div class="card cardmargin" style="width: 12rem;">
+                    <img src="./Images/pizza.jpg" class="card-img-top cardimg" alt="Pizza">
+                    <div class="card-body">
+                        <p class="card-text">Pizza: Rs:450\- (1 nos).</p>
+                    </div>
+                </div>
+                <div class="card cardmargin" style="width: 12rem;">
+                    <img src="./Images/Wraps.jpg" class="card-img-top cardimg" alt="Wraps">
+                    <div class="card-body">
+                        <p class="card-text">Wraps: Rs:150\- (1 nos).</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Image card with Pricing End -->
+        </div>
+        <div class="container">
+            <!-- Video of Kitchen & making food Start -->
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Seg3Rmts7Yo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eA7Bpspppyo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- Video of Kitchen & making food End -->
+        </div>
+        <div class="container">
+            <!-- FAQ & Login Form Section Start -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    How to view only Veg item from restaurant menu?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Searching your favourite item from whole menu is headache.
+                                    We are providing solution for this also. If you are interested in only Pure Veg
+                                    items then view menu of only Veg items. Go to Cuisine page of your selected
+                                    restaurant and click on Pure-Veg.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    How to view restaurant details?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body"> we are providing personal pages for every restaurant to add
+                                    their
+                                    details and contents. Customer can view details of restaurant from restaurant page.
+                                    Go to restaurant page and click on About to view details of restaurant.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    How to view social media pages of restaurant?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Restaurant owner can list out their restaurant pages of
+                                    various social media too, so that customer can visit those pages. Customer can view
+                                    link of social media page of restaurant from restaurant page. Customer have to go to
+                                    restaurant page and scroll down for social media page link of URL.</div>
+                            </div>
+                        </div>
+                        <!-- FAQ & Login Form Section End -->
+                    </div>
+
+                </div>
+                <!-- Personal Details Form Start here  -->
+                <div class="col-md-8">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputfname4" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="inputFname4">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputlname4" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="inputLname4">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">State</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Personal details form end here -->
+            </div>
+
+
+
+        </div>
+        <div class="container">
+            <!-- Food Images for Show start -->
+            <div class="row bodyimg">
+                <div class="col-md-4">
+                    <img src="https://images.pexels.com/photos/1893555/pexels-photo-1893555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        width="100%" height="100%" alt="French-fries">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        width="100%" height="100%" alt="Burger1">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://images.pexels.com/photos/1143754/pexels-photo-1143754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        width="100%" height="100%" alt="Salad">
+                </div>
+
+            </div>
+            <!-- Food Images for Show End -->
+        </div>
+        <div class="container">
+            <!-- About food Company Info  -->
+            <p><strong> About Food Company: Patel Hotel</strong> - Platinum Hotels is a F&B-Casual Dining outlet located
+                in the heart of the city. It offers a
+                wide variety of delicious and mouth-watering dishes from all around the world. The restaurant has a cozy
+                and inviting atmosphere, perfect for a romantic dinner or a casual lunch. The menu features a variety of
+                appetizers, main courses, desserts, and drinks. The staff is friendly and attentive, and the prices are
+                reasonable. Silver Dine - Platinum Hotels is the perfect place to enjoy a delicious meal with friends
+                and family.</p>
+        </div>
+        <div class="container">
+            <!-- Discount offer Images Slider Start here -->
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://img.freepik.com/free-psd/delicious-burger-food-menu-social-media-banner-template_106176-360.jpg?size=626&ext=jpg&ga=GA1.2.1699525237.1680927075&semt=ais"
+                            class="d-block w-100 offerimg" alt="Offer1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://img.freepik.com/free-psd/food-menu-restaurant-social-media-banner-template_120329-1660.jpg?size=626&ext=jpg&ga=GA1.2.1699525237.1680927075&semt=ais"
+                            class="d-block w-100 offerimg" alt="offer2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://img.freepik.com/free-psd/food-menu-delicious-pizza-social-media-banner-template_120329-1754.jpg?size=626&ext=jpg&ga=GA1.2.1699525237.1680927075&semt=ais"
+                            class="d-block w-100 offerimg" alt="offer3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://img.freepik.com/free-psd/delicious-food-asian-social-media-template_505751-2989.jpg?size=626&ext=jpg&ga=GA1.1.1699525237.1680927075&semt=ais"
+                            class="d-block w-100 offerimg" alt="offer4">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- Discount offer Images Slider End here -->
+        </div>
+
+
+
+        <div class="container">
+            <!-- Customer reviews Section Start -->
+            <h1>Customer Review</h1>
+            <h2> "good vegetarian dishes"</h2>
+            <p> Hotel Patel serves good vegetarian dishes and in fact there are only few vegetarian restaurants and
+                Hotel
+                patel is one of the best. The Ghee roast and Masala dosa are fresh and crispy and tasted great with
+                sambar
+                and chutney. The restaurant was moderately crowded when we went there and the restaurant was well
+                maintained
+                and clean. The vegetarian dishes are prepared in the traditional style and better than what we have in
+                the
+                vegetarian restaurants in the cities. The staff were also giving good attention to each guests. Nice
+                restaurant to have veg items while in Ahmedabad.</p>
+
+            <h3> Date of visit: March 2023</h3>
+            <p> Value,
+                Service,
+                Food</p>
+            <h2>Ask Joji J about Hotel Patel</h2>
+
+            <!-- customer revview section end -->
+        </div>
+
+
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+       
+            <!-- Footer -->
+            <footer class="text-center text-white nav1">
+                <!-- Grid container -->
+                <div class="container-fluid">
+                    <!-- Section: Links -->
+                    <section class="mt-5">
+                        <!-- Grid row-->
+                        <div class="row text-center d-flex justify-content-center pt-5">
+                            <!-- Grid column -->
+                            <div class="col-md-2">
+                                <h6 class="text-uppercase font-weight-bold">
+                                    <a href="#!" class="text-white">About us</a>
+                                </h6>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-2">
+                                <h6 class="text-uppercase font-weight-bold">
+                                    <a href="#!" class="text-white">Products</a>
+                                </h6>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-2">
+                                <h6 class="text-uppercase font-weight-bold">
+                                    <a href="#!" class="text-white">Awards</a>
+                                </h6>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-2">
+                                <h6 class="text-uppercase font-weight-bold">
+                                    <a href="#!" class="text-white">Help</a>
+                                </h6>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-2">
+                                <h6 class="text-uppercase font-weight-bold">
+                                    <a href="#!" class="text-white">Contact</a>
+                                </h6>
+                            </div>
+                            <!-- Grid column -->
+                        </div>
+                        <!-- Grid row-->
+                    </section>
+                    <!-- Section: Links -->
+
+                    <hr class="my-5" />
+
+                    <!-- Section: Text -->
+                    <section class="mb-5">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-8">
+                                <p>
+                                    Patel Hotel Serve you best in calss servie, please feel free to contact us & rate us to improve our services.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Section: Text -->
+
+                  
+                </div>
+                <!-- Grid container -->
+
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                    © 2023 Copyright:
+                    <a class="text-white" href="#">PatelHotel.com</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+       
+        <!-- End of .container -->
+        
+    </main>
+</body>
+
+</html>
